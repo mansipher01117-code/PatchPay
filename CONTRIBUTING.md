@@ -19,3 +19,8 @@ PatchPay-Agent: true
 ```
 
 Payout is not immediate. It happens only after the PR is merged, every required CI check passes and is green, and a maintainer explicitly approves the payout.
+
+## Claiming a bounty (summary)
+1. Open a PR whose body contains `Fixes #<issue>` and a line `PatchPay-Address: bchtest:…` (chipnet) or `bitcoincash:…` (mainnet).
+2. AI coding agents must also add `PatchPay-Agent: true`.
+3. You are paid only after the PR is merged, every CI check is green, and a maintainer approves (merging counts as approval).
